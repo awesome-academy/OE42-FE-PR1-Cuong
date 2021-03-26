@@ -15,3 +15,13 @@ mixin legacy(legacyTitle,className,imageSource)
                     i.fas.fa-heart
                 a(href='')
                     i.fas.fa-sync-alt
+
+mixin social(socialParagraph,socialsTitle,iconName)
+        .item(class=socialsTitle)
+            .icon
+                .fab(class=iconName)
+            p=socialParagraph
+
+mixin info(infoHeading)
+    h4=infoHeading
+    img(src='./assets/images/footer-decor.jpg', alt='text footer decoration')
