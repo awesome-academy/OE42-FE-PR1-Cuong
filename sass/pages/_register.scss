@@ -38,33 +38,25 @@
       }
     }
     .form-group label {
-        color: $color-black;
-        font-size: $font-size-sm;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-      }
+      color: $color-black;
+      font-size: $font-size-sm;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
   }
+}
 
 .form__content {
   .btn-form {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
     a {
-    background: $color-black;
-    color: $color-white;
-    font-size: $font-size-sm;
-    padding: 0.5rem 1rem;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+      @include accountButton;
+    }
     a:nth-child(2) {
       .fa-reply {
-         margin-right: 1rem;
+        margin-right: 1rem;
       }
     }
   }
