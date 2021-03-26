@@ -57,6 +57,10 @@
   border-bottom: 0.2rem dotted #e8e8e8;
 }
 
+@mixin borderBottomSolid {
+  border-bottom: 1.5px solid #dedddd80;
+}
+
 @mixin ctaButton {
   font-weight: 700;
   border: #e6e6e6 1px solid;
@@ -65,4 +69,36 @@
   margin-right: 0.4rem;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+@mixin listPagination {
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    @include borderBottomDotted;
+    padding-bottom: 0.5rem;
+    &__list {
+      display: flex;
+      height: 1.9rem;
+      &__horizontal i {
+        margin-right: 1rem;
+      }
+    }
+    &__number {
+      .fa-caret-left {
+        margin-right: 0.5rem;
+      }
+      .fa-caret-right {
+        margin-left: 0.5rem;
+      }
+      span {
+        margin: 0 0.5rem;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+      }
+      span:nth-last-child(-n + 3) {
+        color: $color-very-light-gray;
+      }
+    }
+  }
 }
