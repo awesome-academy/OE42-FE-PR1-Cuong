@@ -342,6 +342,7 @@
     }
   }
 }
+
 ///////
 .box {
   display: flex;
@@ -403,7 +404,6 @@
       margin-top: 1rem;
     }
   }
-
   &__content p {
     position: relative;
     height: 30px;
@@ -411,7 +411,6 @@
     font-weight: 600;
     margin-top: 1rem;
   }
-
   &__content h4 {
     color: #b4b4b4;
     font-size: 1.4rem;
@@ -420,13 +419,11 @@
     color: #000;
     text-decoration: none;
   }
-
   img {
     border-bottom: 0.1rem dashed $color-boder-bottom-gray;
     height: 26rem;
   }
 }
-
 .legacy-content p::after {
   content: "";
   width: 3rem;
