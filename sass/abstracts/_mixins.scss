@@ -9,7 +9,6 @@
   top: 40%;
 }
 
-
 @mixin arrowRight {
   border-left: 20px solid;
   z-index: 10;
@@ -21,7 +20,6 @@
   position: absolute;
   top: 40%;
 }
-
 
 @mixin titleProductShowCase {
   position: absolute;
@@ -36,7 +34,7 @@
   text-decoration: none;
   color: $color-very-light-gray;
   font-size: $font-size-sm;
-  font-weight: 400
+  font-weight: 400;
 }
 
 @mixin infoButtonStyling {
