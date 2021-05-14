@@ -252,6 +252,18 @@ table {
   100% {
     left: -200%; } }
 
+@keyframes slider {
+  0% {
+    left: 0; }
+  40% {
+    left: 0; }
+  50% {
+    left: -100%; }
+  90% {
+    left: -100%; }
+  100% {
+    left: -200%; } }
+
 *,
 *::after,
 *::before {
@@ -651,6 +663,62 @@ body {
   text-decoration: none;
   pointer-events: none;
 }
+
+@font-face {
+  font-family: "UTMAndrogyne";
+  src: url(./assets/fonts/UTMAndrogyne.ttf); }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(./assets/fonts/MYRIADPRO-SEMIBOLD.OTF); }
+
+@font-face {
+  font-family: "UTM ViceroyJF";
+  src: url(./assets/fonts/00187-UTM-ViceroyJF.ttf); }
+
+.legacy__title {
+  margin: 0 auto;
+  padding: 7rem 0;
+  width: 60%; }
+  .legacy__title .main {
+    display: flex;
+    font-family: UTMAndrogyne, serif;
+    align-items: center;
+    color: #c2c2c2; }
+    .legacy__title .main .legacy__title__special {
+      flex: 1;
+      padding-left: 2rem;
+      font-size: 1.8rem; }
+    .legacy__title .main .legacy__title__hot {
+      flex: 2;
+      padding: 0 2rem;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+      font-size: 33.93px;
+      color: #789629; }
+    .legacy__title .main .legacy__title__new {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      padding-right: 2rem;
+      font-size: 1.8rem; }
+  .legacy__title .legacy__title__decoration {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; }
+  .legacy__title .legacy__title__menu {
+    margin-top: 3rem; }
+    .legacy__title .legacy__title__menu .menu ul {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto; }
+      .legacy__title .legacy__title__menu .menu ul li a {
+        font-size: 1.4rem;
+        color: #e6e6e6;
+        list-style: none;
+        text-decoration: none;
+        pointer-events: none; }
 
 @font-face {
   font-family: "UTMAndrogyne";

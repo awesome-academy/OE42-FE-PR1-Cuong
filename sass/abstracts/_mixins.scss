@@ -102,3 +102,15 @@
     }
   }
 }
+
+@mixin accountButton {
+  background: $color-black;
+  color: $color-white;
+  font-size: $font-size-sm;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
